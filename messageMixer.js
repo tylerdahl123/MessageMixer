@@ -55,9 +55,13 @@ MessageMixer.encode=function (string) {
       return string;
   };
 
-  MessageMixer.palindrom= function(str){
+ MessageMixer.palindrome= function(str){
     return `${str} ${MessageMixer.reverseWord(str)}`;
-  }
+  };
   
- module.exports = MessageMixer;
+MessageMixer.pigLatin = function(sentence, character){
+return sentence.split(' ').join(character + ' ')
+};
+
+module.exports =  MessageMixer;
   
